@@ -1,8 +1,11 @@
+from datetime import datetime
+from controles import listarTarefas
+
 menuOpcoes = [
-    "1 - Criar contas",
-    "2 - Listar conta",
-    "3 - Atualizar conta",
-    "4 - Excluir conta",
+    "1 - Criar tarefa",
+    "2 - Listar tarefas",
+    "3 - Atualizar tarefa",
+    "4 - Excluir tarefa",
     "5 - Sair",
 ]
 
@@ -14,18 +17,21 @@ def menuPrincipal ():
         opcaoEscolhida = input("\nEscolha uma opção: ")
         match opcaoEscolhida:
               case "1":
-                    print("\nCriar contas")
+                  print(menuOpcoes[0])
               case "2":
-                    print("\nListar conta")
+                  listarTarefas.executar()
               case "3":
-                    print("\nAtualizar conta")
+                  print(menuOpcoes[2])
               case "4":
-                    print("\nExcluir conta")
+                  print(menuOpcoes[3])
               case "5":
-                    print("\nEncerrado")
-                    break
+                  print("\nEncerrado")
+                  print(menuOpcoes[4])
+                  break
               case _:
                     print("\nOpção inválida")
 
 
-menuPrincipal()
+if __name__ == "__main__":
+    print(datetime.now().strftime("%d/%m/%Y, %H:%M"))
+    menuPrincipal()
