@@ -1,5 +1,8 @@
 from datetime import datetime
-from controles import listarTarefas
+from controles import (
+    listarTarefas,
+    criarTarefas
+)
 
 menuOpcoes = [
     "1 - Criar tarefa",
@@ -17,7 +20,7 @@ def menuPrincipal ():
         opcaoEscolhida = input("\nEscolha uma opção: ")
         match opcaoEscolhida:
               case "1":
-                  print(menuOpcoes[0])
+                  criarTarefas.executar()
               case "2":
                   listarTarefas.executar()
               case "3":
