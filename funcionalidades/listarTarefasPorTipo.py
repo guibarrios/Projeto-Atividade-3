@@ -5,6 +5,10 @@ def executar(tipo):
     if tipo != "todas":
         tarefas = [tarefa for tarefa in tarefas if tarefa.get("prioridade", "") == tipo]
 
+    if len(tarefas) == 0:
+        print("\n*** Lista de tarefas vazia ***")
+        return
+
     for tarefa in tarefas:
         print("\n ---------- // ----------")
         for chave, valor in tarefa.items():

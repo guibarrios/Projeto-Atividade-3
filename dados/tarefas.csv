@@ -1,4 +1,4 @@
-id, descricao, prioridade, data inicial, datafinal, categoria, status
+id, descricao, prioridade, dataInicial, dataFinal, categoria, status
 1, pagar contas, alta, 05/11/2024, 10/11/2024, casa, concluido
 2, estudar, normal, 15/11/2024, 29/11/2024, curso, em andamento
 3, compar ingresso cinema, baixa, 30/11/2024, 30/11/2024, hobby, pendente
