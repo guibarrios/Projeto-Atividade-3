@@ -1,4 +1,5 @@
 from servicos import obterTarefas
+
 def executar(tipo):
     tarefas = obterTarefas.executar()
 

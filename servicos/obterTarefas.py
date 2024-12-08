@@ -7,7 +7,7 @@ def executar():
                 if linha_atual == 0:
                     linha_atual += 1
                 else:
-                    valores = linha.split(", ")
+                    valores = linha.split(",")
                     tarefa = {
                         "id": valores[0].strip(),
                         "descricao": valores[1].strip(),

@@ -1,7 +1,8 @@
 from datetime import datetime
 from controles import (
     listarTarefas,
-    criarTarefas
+    criarTarefas,
+    excluirTarefa,
 )
 
 menuOpcoes = [
@@ -26,7 +27,7 @@ def menuPrincipal ():
               case "3":
                   print(menuOpcoes[2])
               case "4":
-                  print(menuOpcoes[3])
+                  excluirTarefa.executar()
               case "5":
                   print("\nEncerrado")
                   print(menuOpcoes[4])

@@ -1,4 +1,8 @@
-id, descricao, prioridade, dataInicial, dataFinal, categoria, status
-1, pagar contas, alta, 05/11/2024, 10/11/2024, casa, concluido
-2, estudar, normal, 15/11/2024, 29/11/2024, curso, em andamento
-3, compar ingresso cinema, baixa, 30/11/2024, 30/11/2024, hobby, pendente
+id,descricao,prioridade,dataInicial,dataFinal,categoria,status
+1,pagar contas,alta,05/11/2024,10/11/2024,casa,concluido
+2,estudar,normal,15/11/2024,29/11/2024,curso,em andamento
+3,compar ingresso cinema,baixa,30/11/2024,30/11/2024,hobby,pendente
+4,tarefa 4,alta,05/12/2024,05/12/2024,,concluido
+5,teste 5,normal,05/12/2024,25/12/2024,teste,em andamento
+6,teste 6,alta,05/12/2024,05/12/2024,teste,pendente
+7,tarefa 7,alta,05/12/2024,05/12/2024,,concluido

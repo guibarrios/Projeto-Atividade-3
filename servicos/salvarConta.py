@@ -1,7 +1,7 @@
 def executar(novaTarefa):
     try:
         with open("dados/tarefas.csv", "a", encoding="utf8") as arquivo:
-            novaLinha = "\n" + ", ".join([
+            novaLinha = "\n" + ",".join([
                 novaTarefa["id"],
                 novaTarefa["descricao"],
                 novaTarefa["prioridade"],
