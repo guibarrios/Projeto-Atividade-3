@@ -5,4 +5,3 @@ id,descricao,prioridade,dataInicial,dataFinal,categoria,status
 4,tarefa 4,alta,05/12/2024,05/12/2024,,concluido
 5,teste 5,normal,05/12/2024,25/12/2024,teste,em andamento
 6,teste 6,alta,05/12/2024,05/12/2024,teste,pendente
-7,tarefa 7,alta,05/12/2024,05/12/2024,,concluido

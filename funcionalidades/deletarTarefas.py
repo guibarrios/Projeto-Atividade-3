@@ -1,19 +1,19 @@
 from servicos import obterTarefas, atualizarTarefas
 
-def executar(idTarefa):
+def executar(idEncontrado):
     tarefas = obterTarefas.executar()
-    idEncontrado = None
+    tarefaEncontrada = None
 
     for tarefa in tarefas:
-        if tarefa.get("id") == idTarefa:
-            idEncontrado = tarefa
+        if tarefa.get("id") == idEncontrado:
+            tarefaEncontrada = tarefa
 
-    if idEncontrado is None:
-        print(f"Nenhuma tarefa encontrada com o ID {idTarefa}")
+    if tarefaEncontrada is None:
+        print(f"Nenhuma tarefa encontrada com o ID {idEncontrado}")
         return
     
-    print("\ ** Conta encontrada **")   
-    for chave, valor in idEncontrado.items():
+    print("\n ** Conta encontrada **")   
+    for chave, valor in tarefaEncontrada.items():
         print(f"{chave}: {"(vazio)" if len(valor) ==0 else valor }")
 
     escolha = input("\n Confirma exclusão? (s/n): ")
@@ -24,7 +24,7 @@ def executar(idTarefa):
     
     tarefasFiltradas = []
     for tarefa in tarefas:
-        if tarefa.get("id") != idTarefa:
+        if tarefa.get("id") != idEncontrado:
             tarefasFiltradas.append(tarefa)
 
 

@@ -7,4 +7,4 @@ def executar ():
         print("O ID informado é inválido")
         return
     
-    deletarTarefas.executar(idTarefa=idTarefa)
+    deletarTarefas.executar(idEncontrado=idTarefa)
