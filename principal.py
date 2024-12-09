@@ -28,7 +28,6 @@ def menuPrincipal ():
               case "2":
                   listarTarefas.executar()
               case "3":
-                #   print(menuOpcoes[2])
                   atualizarTarefa.executar()
               case "4":
                   excluirTarefa.executar()
