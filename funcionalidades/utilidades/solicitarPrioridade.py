@@ -1,7 +1,11 @@
-def executar(mensagem):
+def executar(mensagem, aceitaVazio = False):
     prioridade = ""
     while prioridade not in ["alta", "normal", "baixa"]:
         prioridadeDigitada = input(mensagem)
+        
+        if aceitaVazio and prioridadeDigitada == "":
+            return ""
+
         match prioridadeDigitada:
             case "1":
                 prioridade = "alta"

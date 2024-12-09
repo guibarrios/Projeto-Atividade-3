@@ -1,4 +1,4 @@
-from servicos import obterTarefas, atualizarTarefas
+from servicos import atualizarDados, obterTarefas
 
 def executar(idEncontrado):
     tarefas = obterTarefas.executar()
@@ -12,14 +12,14 @@ def executar(idEncontrado):
         print(f"Nenhuma tarefa encontrada com o ID {idEncontrado}")
         return
     
-    print("\n ** Conta encontrada **")   
+    print("\n ** Tarefa encontrada **")   
     for chave, valor in tarefaEncontrada.items():
         print(f"{chave}: {"(vazio)" if len(valor) ==0 else valor }")
 
     escolha = input("\n Confirma exclusão? (s/n): ")
     
     if escolha != "s":
-        print("Exclusão cancelada")
+        print("\n ** Exclusão cancelada **")
         return
     
     tarefasFiltradas = []
@@ -28,7 +28,7 @@ def executar(idEncontrado):
             tarefasFiltradas.append(tarefa)
 
 
-    validarExclusao = atualizarTarefas.executar(tarefasFiltradas)
+    validarExclusao = atualizarDados.executar(tarefasFiltradas)
 
     if validarExclusao:
         print("Foi deletado a tarefa")

@@ -1,7 +1,11 @@
-def executar(mensagem):
+def executar(mensagem, aceitaVazio = False):
     status = ""
     while status not in ["concluido", "em andamento", "pendente"]:
         prioridadeDigitada = input(mensagem)
+
+        if aceitaVazio and prioridadeDigitada == "":
+            return ""
+
         match prioridadeDigitada:
             case "1":
                 status = "concluido"

@@ -1,8 +1,11 @@
 from datetime import datetime
+from os import system
 from controles import (
     listarTarefas,
     criarTarefas,
     excluirTarefa,
+    atualizarTarefa
+
 )
 
 menuOpcoes = [
@@ -25,7 +28,8 @@ def menuPrincipal ():
               case "2":
                   listarTarefas.executar()
               case "3":
-                  print(menuOpcoes[2])
+                #   print(menuOpcoes[2])
+                  atualizarTarefa.executar()
               case "4":
                   excluirTarefa.executar()
               case "5":
@@ -37,5 +41,6 @@ def menuPrincipal ():
 
 
 if __name__ == "__main__":
+    system('clear')
     print(datetime.now().strftime("%d/%m/%Y, %H:%M"))
     menuPrincipal()
